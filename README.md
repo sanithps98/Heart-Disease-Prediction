@@ -86,9 +86,11 @@ The new normalised test sets are used for classification using Machine Learning 
 
 A confusion matrix is used to visualise and summarise the performance of a classification algorithm. There are different evaluation metrics to understand the model performance outside of the accuracy metric when there is a strong imbalance in test data. 
 
-**Accuracy:** indicates the proportion of accurate predictions among all predictions. A data set that is not balanced is not a valid metric. /
-**Precision:** It should ideally be 1 (high) for a good classifier. /
-**Recall:**  It should ideally be 1 (high) for a good classifier.
+<ul>
+  <li> <b>Accuracy:</b> indicates the proportion of accurate predictions among all predictions. A data set that is not balanced is not a valid metric.</li>
+  <li> <b>Precision:</b> It should ideally be 1 (high) for a good classifier.</li>
+  <li> <b>Recall:</b> It should ideally be 1 (high) for a good classifier.</li>
+</ul>
 
 **IMAGE-6**
                                               
@@ -102,8 +104,10 @@ The performances of all these models are compared in terms of above mentioned ev
 
 In **Classification I**, the **Random Forest Classifier** performed the best, whereas the **Support Vector Machine** performed the worst. 
 
-Accuracy of Random Forest Class: 75.00% /
-Accuracy of Support Vector Machine: 58.33%
+<ul>
+  <li> Accuracy of Random Forest Class: 75.00% </li>
+  <li> Accuracy of Support Vector Machine: 58.33% </li>
+</ul>
 
 ### Classification II 
 
@@ -111,7 +115,7 @@ The target variable “**DEATH_EVENT**” is visualised to investigate the class
 
 **IMAGE-9**
    
-No Death Events/Survived: 203 /
+No Death Events/Survived: 203 </br>
 Death Events/Dead: 96
 
 In machine learning classification problems, models will not work well when the training data is unbalanced. Due to the class imbalance, there is a strong bias in favour of the dominant class, which lowers classification accuracy and raises the rate of false negatives.
@@ -124,7 +128,7 @@ In this method, some data is deleted from rows of data of the majority classes.
 
 **IMAGE-10**
 
-No Death Events/Survived: 203 /
+No Death Events/Survived: 203 </br>
 Death Events/Dead: 96
 
 **IMAGE-11**
@@ -133,8 +137,10 @@ Death Events/Dead: 96
 
 After applying the **Under-sampling** technique on the imbalanced dataset, the new dataset is fed into different models. In this case, the **Random Forest Classifier** performed the best, whereas the **Support Vector Machine** performed the worst.
 
-Accuracy of Random Forest Class: 89.74% /
-Accuracy of Support Vector Machine: 46.15%
+<ul>
+  <li> Accuracy of Random Forest Class: 89.74% </li>
+  <li> Accuracy of Support Vector Machine: 46.15% </li>
+</ul>
 
 #### Method 2: SMOTE - Synthetic Minority Oversampling Technique
 
@@ -142,15 +148,17 @@ In this method, new data is generated based on the implications of old data. Cur
 
 **IMAGE-12**
 
-No Death Events/Survived: 203 /
+No Death Events/Survived: 203 </br>
 Death Events/Dead: 203
 
 **IMAGE-13**
 
 After applying the **Under-sampling** technique on the imbalanced dataset, the new dataset is fed into different models. In comparison, the Random Forest Classifier performed better than the Neural Network Model.
 
-Accuracy of Random Forest Class: 84.14% /
-Accuracy of Neural Network Model: 50.00%
+<ul>
+  <li> Accuracy of Random Forest Class: 84.14% </li>
+  <li> Accuracy of Support Vector Machine: 50.00% </li>
+</ul>
 
 ### Feature Selection
 
@@ -172,8 +180,10 @@ Using the features selected in the Feature Selection step, the latest balanced d
               
 After applying the **Under-sampling** technique on the imbalanced dataset and feature selection, the new dataset is fed into different models. The Support Vector Machine fared poorly, while the **Random Forest Classifier**, **Logistic Regression** and **K Nearest Neighbours** performed well.
 
-Accuracy of Random Forest Classifier, Logistic Regression and K Nearest Neighbours: 82.05% /
-Accuracy of Support Vector Machine: 46.15%
+<ul>
+  <li> Accuracy of Random Forest Classifier, Logistic Regression and K Nearest Neighbours: 82.05% </li>
+  <li> Accuracy of Support Vector Machine: 46.15% </li>
+</ul>
 
 ### Conclusion
 
