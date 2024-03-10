@@ -1,5 +1,10 @@
 # Heart-Disease-Prediction
 
+</br>
+<div align="center">
+    <img src="images/Heart.jpg" alt="Heart">
+</div>
+
 ## Introduction
 
 When the heart cannot pump enough blood to meet the body's needs, it develops heart failure (HF), a medical ailment. Worldwide incidences of heart disease are rising daily at an unprecedented and exponential rate. Careful diagnosis and implementation of a healthy lifestyle can eliminate many cardiovascular diseases. Machine learning models can improve the detection and manage high-risk cardiovascular patients. The healthcare industry relies on machine learning models to predict heart failure cases. Medical examiners and cardiac practitioners can expect heart disease using a statistical model based on patient health history.
