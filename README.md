@@ -136,9 +136,12 @@ The target variable “**DEATH_EVENT**” is visualised to investigate the class
 <div align="center">
     <img src="images/IMAGE-9.png" alt="Image 9">
 </div>
-  
-No Death Events/Survived: 203 </br>
-Death Events/Dead: 96
+
+<div align="center">
+    <h4> No Death Events/Survived: 203 </br></h4>
+    <h4> Death Events/Dead: 96 </br></h4>
+</div>
+</br>
 
 In machine learning classification problems, models will not work well when the training data is unbalanced. Due to the class imbalance, there is a strong bias in favour of the dominant class, which lowers classification accuracy and raises the rate of false negatives.
 
@@ -152,9 +155,11 @@ In this method, some data is deleted from rows of data of the majority classes.
     <img src="images/IMAGE-10.png" alt="Image 10">
 </div>
 
-No Death Events/Survived: 203 </br>
-Death Events/Dead: 96
-
+<div align="center">
+    <h4> No Death Events/Survived: 203 </br></h4>
+    <h4> Death Events/Dead: 96 </br></h4>
+</div>
+</br>
 <div align="center">
     <img src="images/IMAGE-11.png" alt="Image 11">
 </div>
@@ -178,8 +183,11 @@ In this method, new data is generated based on the implications of old data. Cur
 </div>
 
 
-No Death Events/Survived: 203 </br>
-Death Events/Dead: 203
+<div align="center">
+    <h4> No Death Events/Survived: 203 </br></h4>
+    <h4> Death Events/Dead: 203 </br></h4>
+</div>
+</br>
 
 <div align="center">
     <img src="images/IMAGE-13.png" alt="Image 13">
