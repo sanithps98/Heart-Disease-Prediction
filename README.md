@@ -40,8 +40,10 @@ Missing/Null values can bias the machine learning models' results, thus reducing
 
 Therefore, it is necessary to apply strategies to deal with the missing values/null values before the dataset is passed to the machine learning or deep learning framework. There are no null values present in the dataset. It is evident as there are no data points in the heat map.
 
-**IMAGE 1**
-                      
+<div align="center">
+    <img src="images/IMAGE-1.png" alt="Image 1">
+</div>
+
 Categorical and numerical features make up the attributes of the dataset. Categorical data are data types that can be stored and recognised depending on the names or labels given to them. Data expressed as numbers instead of in any linguistic or descriptive form is compared to numerical data.
 
 <ul>
@@ -51,17 +53,26 @@ Categorical and numerical features make up the attributes of the dataset. Catego
  
 Multiple python functions are created to carry out the descriptive statistical analysis of the numerical features. The following statistical information has been found:
 
-**IMAGE 2**
+<div align="center">
+    <img src="images/IMAGE-2.png" alt="Image 2">
+</div>
+
 
 The distribution of categorical and numerical features are studied by plotting the charts. It is found that:
 
-**IMAGE 3**
+<div align="center">
+    <img src="images/IMAGE-3.png" alt="Image 3">
+</div>
+
 
 <ul>
   <li>All the categorical features are <b>Normally Distributed.</b></li>
 </ul>
  
-**IMAGE 4**
+<div align="center">
+    <img src="images/IMAGE-4.png" alt="Image 4">
+</div>
+
 
 <ul>
   <li>The data distribution for <b>age</b>, <b>ejection fraction</b>, <b>creatinine phosphokinase</b> and <b>serum creatinine</b> is rightly or positively skewed.</li>
@@ -72,7 +83,10 @@ The distribution of categorical and numerical features are studied by plotting t
 
 Different visualisations are done, including Categorical Features vs Target Variable (DEATH_EVENT) and Numerical Features vs Target Variable (DEATH_EVENT), to understand the dataset better. Moreover, the mean values of all the  features are found for cases of DEATH_EVENT and No DEATH_EVENT.
 
-**IMAGE 5**
+<div align="center">
+    <img src="images/IMAGE-5.png" alt="Image 5">
+</div>
+
 
 To address the overfitting and underfitting of the training model, the initial modelling dataset is divided into training and testing samples/sets. The testing set is a collection of data points that helps determine whether the model can generalise effectively to new or unseen data. The training set is used to train the model.
 
@@ -92,15 +106,21 @@ A confusion matrix is used to visualise and summarise the performance of a class
   <li> <b>Recall:</b> It should ideally be 1 (high) for a good classifier.</li>
 </ul>
 
-**IMAGE-6**
-                                              
+<div align="center">
+    <img src="images/IMAGE-6.png" alt="Image 6">
+</div>
+                                       
 **F1 Score:** Metric which considers recall and precision. It is generally described as the harmonic mean of the two.
 
-**IMAGE-7**
+<div align="center">
+    <img src="images/IMAGE-7.png" alt="Image 7">
+</div>
 
 The performances of all these models are compared in terms of above mentioned evaluation metrics.
 
-**IMAGE-8**
+<div align="center">
+    <img src="images/IMAGE-8.png" alt="Image 8">
+</div>
 
 In **Classification I**, the **Random Forest Classifier** performed the best, whereas the **Support Vector Machine** performed the worst. 
 
@@ -113,8 +133,10 @@ In **Classification I**, the **Random Forest Classifier** performed the best, wh
 
 The target variable “**DEATH_EVENT**” is visualised to investigate the class imbalance problem. It is found that the dataset is unbalanced with low data points(299). The ratio of Death Event Cases to No Death Event Cases is 2:1, and thus the predictions and visualisations will be biased towards No Death Event cases. 
 
-**IMAGE-9**
-   
+<div align="center">
+    <img src="images/IMAGE-9.png" alt="Image 9">
+</div>
+  
 No Death Events/Survived: 203 </br>
 Death Events/Dead: 96
 
@@ -126,12 +148,17 @@ It is necessary to have a balanced dataset as it considers the same amount of in
 
 In this method, some data is deleted from rows of data of the majority classes. 
 
-**IMAGE-10**
+<div align="center">
+    <img src="images/IMAGE-10.png" alt="Image 10">
+</div>
 
 No Death Events/Survived: 203 </br>
 Death Events/Dead: 96
 
-**IMAGE-11**
+<div align="center">
+    <img src="images/IMAGE-11.png" alt="Image 11">
+</div>
+
           
 **Limitation:** It is difficult to use when there is no substantial (and relatively equal) data from each target class.
 
@@ -146,12 +173,18 @@ After applying the **Under-sampling** technique on the imbalanced dataset, the n
 
 In this method, new data is generated based on the implications of old data. Current inputs provide distinct input rows with a label depending on what the original data implies rather than deleting or copying the data.
 
-**IMAGE-12**
+<div align="center">
+    <img src="images/IMAGE-12.png" alt="Image 12">
+</div>
+
 
 No Death Events/Survived: 203 </br>
 Death Events/Dead: 203
 
-**IMAGE-13**
+<div align="center">
+    <img src="images/IMAGE-13.png" alt="Image 13">
+</div>
+
 
 After applying the **Under-sampling** technique on the imbalanced dataset, the new dataset is fed into different models. In comparison, the Random Forest Classifier performed better than the Neural Network Model.
 
@@ -164,19 +197,25 @@ After applying the **Under-sampling** technique on the imbalanced dataset, the n
 
 Feature Selection is done to choose a limited set of features dependent on the target variable for use in the model resulting in good performance results. It is achieved by investigating the significance of the features for selection purposes. The distribution of each feature between the target class's two groups (Survived vs. Dead) is first compared using the Mann-Whitney test and Chi-Square test.
 
-**IMAGE-14**
+<div align="center">
+    <img src="images/IMAGE-14.png" alt="Image 14">
+</div>
 
 The features are ranked in the most significant order (using P = 0.05).  The feature importance plot is produced from the Random Forest Classifier in III.
 
-**IMAGE-15**                    
-
+<div align="center">
+    <img src="images/IMAGE-15.png" alt="Image 15">
+</div>
+                 
 The features to be selected are determined using the plot and the results of the statistical tests. **The dependent variable is essentially equally affected by high correlation characteristics, which are more linearly dependent.** Therefore, if there is a strong correlation between two features, one of them may be eliminated. **Time, serum creatinine** and **ejection_fraction** are the most crucial variables.
 
 ### Classification III  
 
 Using the features selected in the Feature Selection step, the latest balanced dataset is used for classification models.
 
-**IMAGE-16**  
+<div align="center">
+    <img src="images/IMAGE-16.png" alt="Image 16">
+</div>
               
 After applying the **Under-sampling** technique on the imbalanced dataset and feature selection, the new dataset is fed into different models. The Support Vector Machine fared poorly, while the **Random Forest Classifier**, **Logistic Regression** and **K Nearest Neighbours** performed well.
 
